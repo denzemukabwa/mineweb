@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Site — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Short description of your site here." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Your Site</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Welcome — build something great</h2>
+      <p>Short line about what you do. Call to action below.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="about" class="card-grid">
+      <article class="card">
+        <h3>About</h3>
+        <p>Who you are and what you offer.</p>
+      </article>
+      <article class="card">
+        <h3>Work</h3>
+        <p>Short examples of projects or services.</p>
+      </article>
+      <article class="card">
+        <h3>Contact</h3>
+        <p>Email: you@example.com</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Your Site • Built with ❤</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
